@@ -29,7 +29,6 @@ function App() {
     return (
 
     <div className="App">
-      <NavBar />
       <h1>To-Do List</h1>
       <ToDoForm addTodo={addTodo} />
       <ToDoList todos={todos} deleteTodo={deleteTodo} toggleComplete={toggleComplete} />

@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './toDoItem.module.css';
 
 function ToDoItem({ todo, deleteTodo, toggleComplete }) {
   return (
-    <li>
+    <li className={styles.li}>
       <span 
         onClick={() => toggleComplete(todo.id)} 
         style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}
