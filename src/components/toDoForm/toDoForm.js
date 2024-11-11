@@ -14,13 +14,14 @@ function ToDoForm({ addTodo }) {
 
   return (
 
+    <div className={styles.formContainer}>
     <form class="input-group mb-3" onSubmit={handleSubmit}>
     <div class="input-group-prepend">
       <button class="btn btn btn-dark" type="submit" id="button-addon1">Add</button>
     </div>
     <input type="text" class="form-control" placeholder="Add a new task" aria-label="Example text with button addon" aria-describedby="button-addon1" value={text} onChange={(e) => setText(e.target.value)}></input>
   </form>
-
+  </div>
     /*
     <form className={styles.form} onSubmit={handleSubmit}>
       <input

@@ -8,9 +8,9 @@ function ToDoItem({ todo, deleteTodo, toggleComplete }) {
         onClick={() => toggleComplete(todo.id)} 
         style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}
       >
-        {todo.text}
+        <p>{todo.text}</p>
       </span>
-      <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+      <button onClick={() => deleteTodo(todo.id)} type="button" class="btn btn-danger">Delete</button>
     </li>
   );
 }
