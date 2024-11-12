@@ -1,7 +1,8 @@
 .ul {
     height: 20em;
-    width: 50%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+   
 }
